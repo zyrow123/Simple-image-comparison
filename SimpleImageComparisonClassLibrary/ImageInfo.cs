@@ -1,6 +1,7 @@
 ﻿using SimpleImageComparisonClassLibrary.ExtensionMethods;
 using System.Drawing;
 using System;
+using System.IO;
 using System.Linq;
 
 namespace SimpleImageComparisonClassLibrary
@@ -52,6 +53,13 @@ namespace SimpleImageComparisonClassLibrary
         public ImageInfo(Image image)
         {
             GrayValues = image.GetGrayScaleValues();
+        }
+
+        public ImageInfo(Stream stream)
+        {
+	        using Image image = Image.FromStream(stream);
+
+	        GrayValues = image.GetGrayScaleValues();
         }
         #endregion
 
