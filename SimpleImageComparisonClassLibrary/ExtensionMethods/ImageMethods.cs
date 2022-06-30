@@ -242,7 +242,7 @@ namespace SimpleImageComparisonClassLibrary.ExtensionMethods
         /// <param name="newWidth">The new width in pixels</param>
         /// <param name="newHeight">The new height in pixels</param>
         /// <returns>A resized version of the original image</returns>
-        public static Image GetResizedVersion(this Image originalImage, int newWidth, int newHeight, bool highSpeed = true)
+        public static Image GetResizedVersion(this Image originalImage, int newWidth, int newHeight, bool highSpeed = false)
         {
             Image smallVersion = new Bitmap(newWidth, newHeight);
             using (Graphics g = Graphics.FromImage(smallVersion))

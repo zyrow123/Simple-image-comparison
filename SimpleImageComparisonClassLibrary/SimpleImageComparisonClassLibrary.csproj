@@ -1,7 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>2.0.1</Version>
+    <PackageProjectUrl>https://www.codeproject.com/Articles/374386/Simple-image-comparison-in-NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zyrow123/Simple-image-comparison</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
